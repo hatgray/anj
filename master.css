@@ -5,10 +5,7 @@
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.f1{
-font-style:Garamond;
-font-size:300px;
-}
+
 
 * {
       box-sizing: border-box;
@@ -103,11 +100,7 @@ nav ul li a {
 
 @media screen and (max-width: 864px) {
       
-      .f1{
-font-style:Garamond;
-font-size:15px;
-width:200px;
-}
+ 
       .logo {
             padding: 0;
       }
