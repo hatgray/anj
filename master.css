@@ -5,12 +5,7 @@
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.frame{
-      height: 19%;
-      width: 30%;
-      background-color: blue;
-      margin:30% 0% 0% 80% ;
-}
+
 
 * {
       box-sizing: border-box;
