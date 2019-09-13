@@ -11,7 +11,7 @@ body{
   padding:0;
   margin:0;
   background-color:#f4f4f4;
-  background-image: url("abc/gif2.gif");
+  background-image: url('abc/gif2.gif');
   background-size: cover;
   overflow: hidden; 
   height: 100vh;
