@@ -7,7 +7,7 @@
 
 .f1{
 font-family:Garamond;
-font-size:10px;
+font-size:20px;
 }
 
 * {
@@ -102,6 +102,11 @@ nav ul li a {
 }
 
 @media screen and (max-width: 864px) {
+      
+      .f1{
+
+font-size:15px;
+}
       .logo {
             padding: 0;
       }
