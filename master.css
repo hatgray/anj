@@ -5,7 +5,10 @@
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-
+.f1{
+font-family:Garamond;
+font-size:10px;
+}
 
 * {
       box-sizing: border-box;
