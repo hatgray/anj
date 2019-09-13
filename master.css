@@ -1,237 +1,94 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyfra wmes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.frame{
-      height: 19%;
-      width: 30%;
-      background-color: blue;
-      margin:30% 0% 0% 80% ;
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
 }
 
-* {
-      box-sizing: border-box;
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
 }
 
-html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-}
 
-body {
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      font-family: Poppins;
-      font-weight: 400;
-      background: url(sky.jpg);
-      background-position: center;
-      background-size: cover;
 
-      opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
 
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-nav {
-      padding: 8px;
-      
-}
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-.logo {
-      float: left;
-      padding: 8px;
-      margin-left: 16px;
-      margin-top: 8px;
-    
-}
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
 
-.logo a {
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 15px;
-      letter-spacing: 0px;
-      text-decoration: none;
-}
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
 
-nav ul {
-      float: right;
-}
 
-nav ul li {
-      display: inline-block;
-      float: left;
-}
 
-nav ul li:not(:first-child) {
-      margin-left: 48px;
-}
 
-nav ul li:last-child {
-      margin-right: 24px;
-}
 
-nav ul li a {
-      display: inline-block;
-      outline: none;
-      color: #000;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 1.2px;
-      font-weight: 600;
-}
 
-@media screen and (max-width: 864px) {
-      .logo {
-            padding: 0;
-      }
 
-      .nav-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: #fff;
-            opacity: 0;
-            transition: all 0.2s ease;
-      }
 
-      .nav-wrapper ul {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-      }
-
-      .nav-wrapper ul li {
-            display: block;
-            float: none;
-            width: 100%;
-            text-align: right;
-            margin-bottom: 10px;
-      }
-
-      .nav-wrapper ul li:nth-child(1) a {
-            transition-delay: 0.2s;
-      }
-
-      .nav-wrapper ul li:nth-child(2) a {
-            transition-delay: 0.3s;
-      }
-
-      .nav-wrapper ul li:nth-child(3) a {
-            transition-delay: 0.4s;
-      }
-
-      .nav-wrapper ul li:nth-child(4) a {
-            transition-delay: 0.5s;
-      }
-
-      .nav-wrapper ul li:not(:first-child) {
-            margin-left: 0;
-      }
-
-      .nav-wrapper ul li a {
-            padding: 10px 24px;
-            opacity: 0;
-            color: #000;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1.2px;
-            transform: translateX(-20px);
-            transition: all 0.2s ease;
-      }
-
-      .nav-btn {
-            position: fixed;
-            right: 10px;
-            top: 10px;
-            display: block;
-            width: 48px;
-            height: 48px;
-            cursor: pointer;
-            z-index: 9999;
-            border-radius: 50%;
-      }
-
-      .nav-btn i {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: #000;
-            border-radius: 2px;
-            margin-left: 14px;
-      }
-
-      .nav-btn i:nth-child(1) {
-            margin-top: 16px;
-      }
-
-      .nav-btn i:nth-child(2) {
-            margin-top: 4px;
-            opacity: 1;
-      }
-
-      .nav-btn i:nth-child(3) {
-            margin-top: 4px;
-      }
-}
-
-#nav:checked + .nav-btn {
-      transform: rotate(45deg);
-}
-
-#nav:checked + .nav-btn i {
-      background: #000;
-      transition: transform 0.2s ease;
-}
-
-#nav:checked + .nav-btn i:nth-child(1) {
-      transform: translateY(6px) rotate(180deg);
-}
-
-#nav:checked + .nav-btn i:nth-child(2) {
-      opacity: 0;
-}
-
-#nav:checked + .nav-btn i:nth-child(3) {
-      transform: translateY(-6px) rotate(90deg);
-}
-
-#nav:checked ~ .nav-wrapper {
-      z-index: 9990;
-      opacity: 1;
-}
-
-#nav:checked ~ .nav-wrapper ul li a {
-      opacity: 1;
-      transform: translateX(0);
-}
-
-.hidden {
-      display: none;
-}
