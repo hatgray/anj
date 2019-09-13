@@ -25,7 +25,7 @@ body {
       height: 100vh;
       font-family: Poppins;
       font-weight: 400;
-      background: url(bg77.jpg);
+      background: url('bg77.jpg');
       background-position: center;
       background-size: cover;
 
