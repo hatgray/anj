@@ -7,7 +7,7 @@
 
 .f1{
 font-family:Garamond;
-font-weight:200px;
+font-size:200px;
 }
 
 * {
@@ -105,7 +105,7 @@ nav ul li a {
       
       .f1{
 
-font-weight:15px;
+font-size:15px;
 }
       .logo {
             padding: 0;
