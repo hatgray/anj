@@ -7,10 +7,10 @@ html, body{
   color: #222;
 }
 .navbar{
-  padding: .2rem;
+  padding: .1rem;
 }
 .navbar-brand{
-  width: 15%;
+  width: 30%;
   height: 10%;
 }
 .navbar-nav li{
