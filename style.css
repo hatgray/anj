@@ -68,21 +68,9 @@ html, body{
   margin-bottom: 1rem;
 }
 
-.fa-code{
-  color:#e54d26;
-}
 
-.fa-bold{
-  color: #563d7c;
-}
 
-.fa-css3{
-  color: #2163af;
-}
 
-.fa-code, .fa-bold, .fa-css3{
-  font-size:4em;
-  margin:1rem;
 
 }
 .social a {
@@ -183,7 +171,7 @@ hr.light-100{
   font-size: 90%;
   padding: 4px 8px;
 }
-.carousel-indicators{
+.carousel-indicators{ 
   display: none;
 }
 .display-4{
@@ -194,7 +182,7 @@ hr.light-100{
   font-size: 2em;
   padding: .7rem;
   }
-  
+
 }
 
 
