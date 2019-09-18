@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Renaissance Jamaica Group Home</title>
+	<title>Renaissance Jamaica Group About</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -26,9 +26,10 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item active"><a class="nav-link"
-			href="#"><font color="#F2EF14">Home</font></a></li>
+			href="index.html"><font color="#F2EF14">Home</font></a></li>
 
-			<li class="nav-item"><a class="nav-link" href="about.html"><font color="#F2EF14">About</font></a></li>
+			<li class="nav-item"><a class="nav-link"
+			href="about.html"><font color="#F2EF14">About</font></a></li>
 			<li class="nav-item"><a class="nav-link"
 			href="#"><font color="#F2EF14">Contact</font></a></li>
 			<li class="nav-item"><a class="nav-link"
@@ -41,7 +42,7 @@
 </nav>
 
 
-<!--- Image Slider -->
+<!--- Image Slider 
 <div id="slides" class="carousel slide" data-ride="carousel">
 <ul class="carousel-indicators">
 	<li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -65,7 +66,7 @@
 		<img src="pen.jpg">
 	</div>
 </div>
-</div>
+</div>-->
 
 <!--- Jumbotron -->
 <div class="container-fluid">
